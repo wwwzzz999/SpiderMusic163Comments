@@ -21,12 +21,7 @@ public class Start {
     private static final int ONE_PAGE=20;
 
     public static void main(String[] args) {
-       // readKey();
-//        JSONObject ob = JSONObject.parseObject(NetEaseMusicUtils.crawlAjaxUrl("1332722587",0));
-//        String s= (String) JSONPath.eval(ob,"$.comments[0].beReplied[0].content");
-//        System.out.println(s);
-        Spider spider = Spider.create(new Music163process());
-
+        readKey();
     }
 
     public static String readKey(){
@@ -49,12 +44,6 @@ public class Start {
         return "";
     }
 
-//    @Test
-//    public void s(){
-//        int count = 80;
-//        int pages = count%20==0?count/20:count/20+1;
-//        System.out.println(pages);
-//    }
 
     public static void getComments(int userId, String songId){
         int offest=0;
